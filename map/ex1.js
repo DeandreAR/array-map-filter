@@ -20,8 +20,10 @@ En sortie: [
 ]
 
  */
-
-function getStringsLength(strings) {
+function getStringsLength(strings) {   
+  return strings.map(function(list){
+    return list + ' contains ' + list.length + ' characters';
+  })
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

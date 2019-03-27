@@ -23,6 +23,16 @@ Sortie attendue:
 */
 
 function getJedisNames(characters) {
+  const name = characters.filter(function(characters) {
+  return characters.side == 'light';
+
+})
+
+.map(function(characters) {
+  return characters.name;
+});
+  
+return name;
 }
 
 module.exports = getJedisNames;

@@ -24,7 +24,13 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
-}
+    return names.filter(function(family) {
+      const n = family.split(' ');
+      if(n[1] === 'Stark'){
+        return family;
+      }
+    });
+  }
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

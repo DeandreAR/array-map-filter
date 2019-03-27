@@ -29,6 +29,11 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  return products.filter(function(basprix) {
+  if (basprix.price <= maxPrice) {
+    return products;
+  }
+  })
 }
 
 // Ne pas modifier l'export
